@@ -1,0 +1,65 @@
+Kevin and Stuart want to play the 'The Minion Game'.
+
+Game Rules
+
+Both players are given the same string, .
+Both players have to make substrings using the letters of the string .
+Stuart has to make words starting with consonants.
+Kevin has to make words starting with vowels. 
+The game ends when both players have made all possible substrings. 
+
+Scoring
+A player gets +1 point for each occurrence of the substring in the string .
+
+For Example:
+String  = BANANA
+Kevin's vowel beginning word = ANA
+Here, ANA occurs twice in BANANA. Hence, Kevin will get 2 Points. 
+
+For better understanding, see the image below: 
+
+BANANA
+STUART :
+  B       1
+  N       2
+  BA      1
+  NA      2
+  BAN     1
+  NAN     1
+  BANA    1
+  NANA    1
+  BANAN   1
+  BANANA  1
+  Total : 12
+  
+  KEVIN
+  A       3
+  AN      2
+  ANA     2
+  ANAN    1
+  ANANA   1
+  Total : 9
+
+Your task is to determine the winner of the game and their score.
+
+Input Format
+
+A single line of input containing the string S. 
+Note: The string  will contain only uppercase letters: [A-Z] .
+
+Constraints
+0 <= len(S) <= 10pow6
+
+Output Format
+Print one line: the name of the winner and their score separated by a space.
+
+If the game is a draw, print Draw.
+
+Sample Input
+BANANA
+
+Sample Output
+Stuart 12
+
+Note : 
+Vowels are only defined as . In this problem,  is not considered a vowel.
